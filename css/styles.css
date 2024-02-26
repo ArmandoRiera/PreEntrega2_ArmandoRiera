@@ -6,6 +6,35 @@
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
+/* CLASES AUXILIARES */
+
+/* Formato de texto negrita */
+.bold{
+    font-weight: bold;
+}
+
+/* Imagem 100% ampliada */
+.wide-image{
+    max-width: 100%;
+    height: auto;
+}
+
+.call-to-action{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.text-aligned{
+    display: flex;
+}
+
+
+
 /* NAVEGADOR */
 
 .navbar {
@@ -211,4 +240,41 @@
         width: 45px;
         height: auto;
     }
+}
+
+/* MAIN (index.html) */
+
+.main__img--desktop {
+    display: none;
+}
+
+@media (min-width: 590px){
+    .main__img--desktop{
+        display: block;
+    }
+
+    .main__img--mobile{
+        display: none;
+    }
+}
+
+.main__h1{
+    color: #5A7D7C;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+@media (min-width: 1024px) {
+    .main__h1{
+        font-size: 70px;
+    }
+}
+
+.main-index p{
+    font-size: 10px;
+}
+
+#prueba{
+    padding: 10 50px;
 }
