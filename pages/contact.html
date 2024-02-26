@@ -44,8 +44,50 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main-contact">
+        
+        <h1 class="main__h1--contact">CONTACT ME</h1>
+        
+        <form action="#" method="get">
+            <!-- Datos del cliente -->
+            <div class="form-section">
+                <label for="first-name">First Name:*</label>
+                <input type="text" id="first-name" name="First Name" required>
+                <label for="last-name">Last Name:*</label>
+                <input type="text" id="last-name" name="Last Name" required>
+                <label for="email">Email Address:*</label>
+                <input type="text" id="email" name="Email" required>
+            </div>
+            
+            <!-- Servicio que le interesa al cliente -->
+            <div class="form-section">
+                <label>What services are you interested in?</label>
+                <input type="checkbox" id="campaigns" name="services[]" value="individual-campaings">
+                <label for="campaigns">Individual Campaigns</label>
+                <input type="checkbox" id="flow-designs" name="services[]" value="flow-designs">
+                <label for="flow-designs">Flow Designs</label>
+            </div>
 
+            <!-- Referencias -->
+            <div class="form-section">
+                <label for="about-me">How did you hear about me?</label>
+                <select id="about-me" name="about-me">
+                    <option value="social-media">Social Media</option>
+                    <option value="referral">Referral</option>
+                    <option value="behance">Behance</option>
+                    <option value="linkedin">LinkedIn</option>
+                    <option value="my-website">My Website</option>
+                </select>
+            </div>
+
+            <!-- Otros comentarios del cliente -->
+            <div class="form-section">
+                <label for="comments">Please tell me more about you business and estimated budget for the project:</label>
+                <textarea id="comments" name="comments" rows="6"></textarea>
+            </div>
+
+            <input id="sent-buttom" type="submit" value="Sent">
+        </form>
     </main>
 
     <!-- FOOTER -->
