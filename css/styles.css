@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
@@ -36,26 +36,179 @@
     background-image: url(../recursos/botones/menu-hamburguesa.png);
 }
 
-.nav-link{
+.nav-link {
     color: #EFA00B;
     font-weight: bold;
     font-size: 15px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: white;
 }
 
-.navbar-nav{
+.navbar-nav {
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-@media (min-width: 1024px){
-    .navbar h2{
+@media (min-width: 1024px) {
+    .navbar h2 {
         font-size: 50px;
     }
-    .nav-link{
+
+    .nav-link {
         font-size: 25px;
+    }
+}
+
+/* FOOTER */
+.footer {
+    background-color: #5A7D7C;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+.footer h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 30px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.social-media-icon {
+    width: 35px;
+    height: auto;
+}
+
+.footer div {
+    display: flex;
+    border-bottom: 2px solid #F3F3F3;
+    padding-bottom: 10px;
+}
+
+.social-media-icons-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media-icons-container li {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.links-container li {
+    flex-basis: 50%;
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+.links-container-left {
+    display: none;
+}
+
+.links-container-right {
+    display: none;
+}
+
+.social-media-icons-container p {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .links-container {
+        display: none;
+    }
+
+    .footer div {
+        border-bottom: none
+    }
+
+    .links-container-left {
+        display: block;
+        margin: 0;
+        padding-left: 30px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .links-container-right {
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding-right: 30px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer div {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .social-media-icons-container p {
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        color: #F3F3F3;
+    }
+
+    .social-media-icons-container {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer h2 {
+        font-size: 40px;
+    }
+
+    .links-container-left {
+        font-size: 20px;
+    }
+
+    .links-container-right {
+        font-size: 20px;
+    }
+
+    .social-media-icons-container p {
+        font-size: 20px;
+    }
+
+    .social-media-icon {
+        width: 45px;
+        height: auto;
     }
 }
