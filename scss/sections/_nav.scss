@@ -1,0 +1,40 @@
+/* NAVEGADOR */
+.navbar {
+    background-color: #01161E;
+    height: 100px;
+    h2 {
+        text-align: center;
+        color: #F25757;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+.container-fluid {
+    background-color: #01161E;
+}
+
+.navbar-toggler {
+    border: none;
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+.navbar-toggler-icon {
+    background-image: url(../recursos/botones/menu-hamburguesa.png);
+}
+
+.nav-link {
+    color: #EFA00B;
+    font-weight: bold;
+    font-size: 15px;
+    &:hover{
+        color: white;
+    }
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+}

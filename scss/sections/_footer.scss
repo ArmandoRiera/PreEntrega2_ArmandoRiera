@@ -1,0 +1,141 @@
+/* FOOTER */
+.footer {
+    background-color: #5A7D7C;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: #F3F3F3;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0;
+        margin-right: 30px;
+    }
+    ul {
+        list-style: none;
+    }
+    div {
+        display: flex;
+        border-bottom: 2px solid #F3F3F3;
+        padding-bottom: 10px;
+    }
+}
+
+.social-media-icon {
+    width: 35px;
+    height: auto;
+}
+
+.social-media-icons-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li {
+        margin-right: 10px;
+        text-align: center;
+    }
+    p {
+        display: none;
+    }
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    li {
+        flex-basis: 50%;
+    }
+}
+
+.links-container-left {
+    display: none;
+}
+
+.links-container-right {
+    display: none;
+}
+
+// MEDIA QUERIES
+
+@media (min-width: 768px) {
+    .links-container {
+        display: none;
+    }
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            border-bottom: none
+        }
+    }
+    .links-container-left {
+        display: block;
+        margin: 0;
+        padding-left: 30px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .links-container-right {
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding-right: 30px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .social-media-icons-container {
+        flex-direction: row;
+        align-items: center;
+        p {
+            display: block;
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+            color: #F3F3F3;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer h2 {
+        font-size: 40px;
+    }
+
+    .links-container-left {
+        font-size: 20px;
+    }
+
+    .links-container-right {
+        font-size: 20px;
+    }
+
+    .social-media-icons-container {
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .social-media-icon {
+        width: 45px;
+        height: auto;
+    }
+}

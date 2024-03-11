@@ -4,3 +4,16 @@
     margin: 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
+
+/* CLASES AUXILIARES */
+
+/* Formato de texto negrita */
+.bold {
+    font-weight: bold;
+}
+
+/*Imagen ocupa 100% de la pantalla*/
+.wide-image-viewport {
+    max-width: 100%;
+    height: auto;
+}
