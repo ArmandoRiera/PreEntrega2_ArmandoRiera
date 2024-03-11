@@ -202,11 +202,10 @@
     color: #F3F3F3;
     padding: 10px 30px;
     margin: 0;
-    font-size: 50px;
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: 0px 50px 5px 0px;
-    font-size: 40px;
+    font-size: 15px;
 }
 
 @media (min-width: 425px) {
@@ -278,6 +277,10 @@
 
     .main__h2--grid {
         font-size: 60px;
+    }
+
+    .caption {
+        font-size: 25px;
     }
 }
 
