@@ -2,6 +2,7 @@
 .navbar {
     background-color: #01161E;
     height: 100px;
+
     h2 {
         text-align: center;
         color: #F25757;
@@ -16,7 +17,8 @@
 
 .navbar-toggler {
     border: none;
-    &:focus{
+
+    &:focus {
         box-shadow: none;
     }
 }
@@ -29,7 +31,8 @@
     color: #EFA00B;
     font-weight: bold;
     font-size: 15px;
-    &:hover{
+
+    &:hover {
         color: white;
     }
 }
@@ -37,4 +40,18 @@
 .navbar-nav {
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+// MEDIA QUERIES
+
+@media (min-width: 1024px) {
+    .navbar {
+        h2 {
+            font-size: 50px;
+        }
+    }
+
+    .nav-link {
+        font-size: 25px;
+    }
 }
