@@ -466,6 +466,14 @@
     font-size: 25px;
     width: 250px; } }
 
+/* MAIN (work.html) */
+.main__h1--services {
+  color: #EFA00B;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 10px; }
+
 /* MAIN (contact.html) */
 .main__h1--contact {
   color: #EFA00B;
