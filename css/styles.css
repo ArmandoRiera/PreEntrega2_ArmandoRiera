@@ -23,7 +23,10 @@
     text-align: center;
     color: #F25757;
     font-size: 30px;
-    font-weight: bold; }
+    font-weight: bold;
+    transition: .3s ease-in-out; }
+    .navbar h2:hover {
+      transform: scale(1.05); }
 
 .container-fluid {
   background-color: #01161E; }
