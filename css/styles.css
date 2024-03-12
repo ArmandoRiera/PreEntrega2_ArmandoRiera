@@ -197,7 +197,10 @@
   font-weight: bold;
   width: 300px;
   margin: auto;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  transition: .3s ease-in-out; }
+  .call-to-action__my-work:hover {
+    transform: translate(0, 10px); }
 
 /* Artículo My Services */
 .main__h2--services {
@@ -241,7 +244,10 @@
   font-weight: bold;
   width: 300px;
   margin: auto;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  transition: .3s ease-in-out; }
+  .call-to-action__my-services:hover {
+    transform: translate(0, 10px); }
 
 #main-img-services-index {
   width: 300px;
@@ -451,7 +457,10 @@
   font-weight: bold;
   width: 300px;
   margin: auto;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  transition: .3s ease-in-out; }
+  .call-to-action__works:hover {
+    transform: translate(0, 10px); }
 
 @media (min-width: 768px) {
   .main__h1--work {
@@ -467,12 +476,16 @@
     width: 250px; } }
 
 /* MAIN (work.html) */
-.main__h1--services {
+.main-services__h1--services {
   color: #EFA00B;
   text-align: center;
   font-weight: bold;
   font-size: 40px;
   margin-top: 10px; }
+
+@media (min-width: 768px) {
+  .main-services__h1--services {
+    font-size: 70px; } }
 
 /* MAIN (contact.html) */
 .main__h1--contact {

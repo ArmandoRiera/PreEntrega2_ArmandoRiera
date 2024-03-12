@@ -1,5 +1,15 @@
 /* MAIN (work.html) */
 
-.main__h1--services {
-    @include main-titles ($yellow);
+.main-services {
+    &__h1--services {
+        @include main-titles ($yellow);
+    }
+}
+
+@media (min-width: 768px) {
+    .main-services {
+        &__h1--services {
+            font-size: 70px;
+        }
+    }
 }
