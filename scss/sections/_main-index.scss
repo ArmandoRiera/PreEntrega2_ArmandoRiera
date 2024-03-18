@@ -2,10 +2,6 @@
 
 /* Artículo About Me */
 
-.main__img--desktop {
-    display: none;
-}
-
 #main-img-about-index {
     width: 300px;
     height: auto;
@@ -42,9 +38,11 @@
     width: 300px;
     margin: auto;
     margin-bottom: 10px;
+
     &:hover {
-        transform: translate(0,10px);
+        transform: translate(0, 10px);
     }
+
     transition: .3s ease-in-out;
 }
 
@@ -104,9 +102,11 @@
     width: 300px;
     margin: auto;
     margin-bottom: 10px;
+
     &:hover {
-        transform: translate(0,10px);
+        transform: translate(0, 10px);
     }
+
     transition: .3s ease-in-out;
 }
 
@@ -237,13 +237,6 @@
 }
 
 @media (min-width: 768px) {
-    .main__img--desktop {
-        display: block;
-    }
-
-    .main__img--mobile {
-        display: none;
-    }
 
     .main__h1--index {
         font-size: 70px;

@@ -11,6 +11,21 @@
     height: auto;
 }
 
+/*Responsive de imagen principal de las secciones index, work y services*/
+.main__img--desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .main__img--desktop {
+        display: block;
+    }
+
+    .main__img--mobile {
+        display: none;
+    }
+}
+
 // MIXIN
 @mixin main-titles ($title-color) {
     color: $title-color;
@@ -18,4 +33,25 @@
     font-weight: bold;
     font-size: 40px;
     margin-top: 10px;
+}
+
+@mixin call-to-action ($cta-bg-color, $cta-font-color) {
+    display: block;
+    text-decoration: none;
+    color: $cta-font-color;
+    background-color: $cta-bg-color;
+    padding: 10px 0;
+    border-radius: 50px;
+    text-align: center;
+    font-size: $xsmall;
+    font-weight: bold;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+
+    &:hover {
+        transform: translate(0, 10px);
+    }
+
+    transition: .3s ease-in-out;
 }
