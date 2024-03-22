@@ -39,6 +39,7 @@
 
         p {
             font-size: $xsmall;
+            color: $white;
             padding: 15px;
         }
 
@@ -77,6 +78,10 @@
 
     &__p--separated {
         padding: 15px;
+    }
+
+    a {
+        @include call-to-action ($green, $white)
     }
 
 
@@ -176,6 +181,12 @@
 
         p {
             font-size: $medium;
+        }
+
+        a {
+            font-size: $medium;
+            width: 250px;
+            margin-bottom: 20px;
         }
     }
 
