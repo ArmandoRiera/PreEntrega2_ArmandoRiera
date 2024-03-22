@@ -1,12 +1,17 @@
 /* MAIN (work.html) */
 
+/*Sección de servicios*/
+
 .main-services {
+    background-color: $green;
+
     &__h1--services {
         @include main-titles ($yellow);
     }
 }
 
-.article-campaings {
+.article-campaings,
+.article-flow-designs {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -28,7 +33,7 @@
             font-size: $large;
             font-weight: bold;
             text-align: center;
-            color: $green;
+            color: $white;
             margin: 10px;
         }
 
@@ -43,8 +48,45 @@
     }
 }
 
+/*Sección "Why choose me?"*/
+
+.section-choose-me {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: $yellow;
+
+    h3 {
+        font-size: $medium;
+        font-weight: bold;
+        text-align: center;
+        color: $black;
+        margin: 10px;
+    }
+
+    ul {
+        background-color: $light-yellow;
+        margin: 15px;
+        padding: 15px 30px;
+    }
+
+    p {
+        font-size: $xsmall;
+    }
+
+    &__p--separated {
+        padding: 15px;
+    }
+
+
+}
+
+
 @media (min-width: 425px) {
-    .article-campaings {
+
+    .article-campaings,
+    .article-flow-designs {
         &__img {
             width: 400px;
             height: auto;
@@ -54,6 +96,12 @@
             p {
                 font-size: $small;
             }
+        }
+    }
+
+    .section-choose-me {
+        p {
+            font-size: $small;
         }
     }
 }
@@ -74,10 +122,30 @@
             width: 768px-(400px+15px*2);
         }
     }
+
+    .article-flow-designs {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+
+        &__container {
+            width: 768px-(400px+15px*2);
+        }
+    }
+
+    .section-choose-me {
+        ul {
+            background-color: transparent;
+            width: 0.7*(768px);
+        }
+    }
+
 }
 
 @media (min-width:1024px) {
-    .article-campaings {
+
+    .article-campaings,
+    .article-flow-designs {
 
         &__container {
             width: 1024px-(400px+15px*2);
@@ -96,10 +164,28 @@
             }
         }
     }
+
+    .section-choose-me {
+        h3 {
+            font-size: $xlarge;
+        }
+
+        ul {
+            width: 0.7*(1024px);
+        }
+
+        p {
+            font-size: $medium;
+        }
+    }
+
+
 }
 
 @media (min-width: 1280px) {
-    .article-campaings {
+
+    .article-campaings,
+    .article-flow-designs {
         &__img {
             max-height: 100%;
             width: auto;
@@ -110,4 +196,15 @@
             height: auto;
         }
     }
+
+    .section-choose-me {
+        ul {
+            width: 0.7*(1280px);
+        }
+
+        &__p--separated {
+            width: 1280px;
+        }
+    }
+
 }

@@ -482,37 +482,46 @@
     width: 250px; } }
 
 /* MAIN (work.html) */
-.main-services__h1--services {
-  color: #EFA00B;
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-  margin-top: 10px; }
+/*Sección de servicios*/
+.main-services {
+  background-color: #5A7D7C; }
+  .main-services__h1--services {
+    color: #EFA00B;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 10px; }
 
-.article-campaings {
+.article-campaings,
+.article-flow-designs {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center; }
-  .article-campaings__img {
+  .article-campaings__img,
+  .article-flow-designs__img {
     width: 300px;
     height: auto;
     margin: 15px; }
-  .article-campaings__container {
+  .article-campaings__container,
+  .article-flow-designs__container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center; }
-    .article-campaings__container h2 {
+    .article-campaings__container h2,
+    .article-flow-designs__container h2 {
       font-size: 30px;
       font-weight: bold;
       text-align: center;
-      color: #5A7D7C;
+      color: #F3F3F3;
       margin: 10px; }
-    .article-campaings__container p {
+    .article-campaings__container p,
+    .article-flow-designs__container p {
       font-size: 15px;
       padding: 15px; }
-    .article-campaings__container a {
+    .article-campaings__container a,
+    .article-flow-designs__container a {
       display: block;
       text-decoration: none;
       color: #F3F3F3;
@@ -526,14 +535,41 @@
       margin: auto;
       margin-bottom: 10px;
       transition: .3s ease-in-out; }
-      .article-campaings__container a:hover {
+      .article-campaings__container a:hover,
+      .article-flow-designs__container a:hover {
         transform: translate(0, 10px); }
 
+/*Sección "Why choose me?"*/
+.section-choose-me {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #EFA00B; }
+  .section-choose-me h3 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #01161E;
+    margin: 10px; }
+  .section-choose-me ul {
+    background-color: #F5B947;
+    margin: 15px;
+    padding: 15px 30px; }
+  .section-choose-me p {
+    font-size: 15px; }
+  .section-choose-me__p--separated {
+    padding: 15px; }
+
 @media (min-width: 425px) {
-  .article-campaings__img {
+  .article-campaings__img,
+  .article-flow-designs__img {
     width: 400px;
     height: auto; }
-  .article-campaings__container p {
+  .article-campaings__container p,
+  .article-flow-designs__container p {
+    font-size: 20px; }
+  .section-choose-me p {
     font-size: 20px; } }
 
 @media (min-width: 768px) {
@@ -544,26 +580,51 @@
     flex-direction: row;
     justify-content: center; }
     .article-campaings__container {
-      width: 338px; } }
+      width: 338px; }
+  .article-flow-designs {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; }
+    .article-flow-designs__container {
+      width: 338px; }
+  .section-choose-me ul {
+    background-color: transparent;
+    width: 537.6px; } }
 
 @media (min-width: 1024px) {
-  .article-campaings__container {
+  .article-campaings__container,
+  .article-flow-designs__container {
     width: 594px; }
-    .article-campaings__container h2 {
+    .article-campaings__container h2,
+    .article-flow-designs__container h2 {
       font-size: 60px; }
-    .article-campaings__container a {
+    .article-campaings__container a,
+    .article-flow-designs__container a {
       font-size: 25px;
       width: 250px; }
-    .article-campaings__container p {
-      font-size: 25px; } }
+    .article-campaings__container p,
+    .article-flow-designs__container p {
+      font-size: 25px; }
+  .section-choose-me h3 {
+    font-size: 40px; }
+  .section-choose-me ul {
+    width: 716.8px; }
+  .section-choose-me p {
+    font-size: 25px; } }
 
 @media (min-width: 1280px) {
-  .article-campaings__img {
+  .article-campaings__img,
+  .article-flow-designs__img {
     max-height: 100%;
     width: auto; }
-  .article-campaings__container {
+  .article-campaings__container,
+  .article-flow-designs__container {
     width: 610px;
-    height: auto; } }
+    height: auto; }
+  .section-choose-me ul {
+    width: 896px; }
+  .section-choose-me__p--separated {
+    width: 1280px; } }
 
 /* MAIN (contact.html) */
 .main__h1--contact {
