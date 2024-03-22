@@ -578,6 +578,22 @@
     .section-choose-me a:hover {
       transform: translate(0, 10px); }
 
+.section-work-carousel {
+  display: flex;
+  background-color: #F3F3F3;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F3F3F3; }
+  .section-work-carousel h5 {
+    border-radius: 30px;
+    height: 30px;
+    text-align: center;
+    color: #F3F3F3;
+    background-color: #F25757; }
+  .section-work-carousel .carousel-control-prev-icon,
+  .section-work-carousel .carousel-control-next-icon {
+    background-color: #F25757; }
+
 @media (min-width: 425px) {
   .article-campaings__img,
   .article-flow-designs__img {
@@ -606,7 +622,10 @@
       width: 338px; }
   .section-choose-me ul {
     background-color: transparent;
-    width: 537.6px; } }
+    width: 537.6px; }
+  .section-work-carousel__container {
+    width: 768px;
+    padding: 30px; } }
 
 @media (min-width: 1024px) {
   .article-campaings__container,

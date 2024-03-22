@@ -55,3 +55,8 @@
 
     transition: .3s ease-in-out;
 }
+
+@mixin carousel-color ($carousel-color, $carousel-bg-color) {
+    color: $carousel-color;
+    background-color: $carousel-bg-color;
+}
