@@ -16,6 +16,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    padding-bottom: 40px;
 
     &__img {
         width: 300px;
@@ -57,6 +58,7 @@
     flex-wrap: wrap;
     align-items: center;
     background-color: $yellow;
+    padding-bottom: 40px;
 
     h3 {
         font-size: $medium;

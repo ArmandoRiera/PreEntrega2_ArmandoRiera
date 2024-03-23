@@ -497,7 +497,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 40px; }
   .article-campaings__img,
   .article-flow-designs__img {
     width: 300px;
@@ -534,7 +535,6 @@
       font-weight: bold;
       width: 300px;
       margin: auto;
-      margin-bottom: 25px;
       transition: .3s ease-in-out; }
       .article-campaings__container a:hover,
       .article-flow-designs__container a:hover {
@@ -546,7 +546,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #EFA00B; }
+  background-color: #EFA00B;
+  padding-bottom: 40px; }
   .section-choose-me h3 {
     font-size: 25px;
     font-weight: bold;
@@ -574,7 +575,6 @@
     font-weight: bold;
     width: 300px;
     margin: auto;
-    margin-bottom: 25px;
     transition: .3s ease-in-out; }
     .section-choose-me a:hover {
       transform: translate(0, 10px); }
@@ -668,12 +668,16 @@
     width: 1280px; } }
 
 /* MAIN (about.html) */
+.main-about p {
+  font-size: 15px; }
+
 .article-about-me,
 .article-designer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center; }
+  align-items: center;
+  padding: 40px 0; }
   .article-about-me__img,
   .article-designer__img {
     width: 300px;
@@ -687,8 +691,8 @@
     align-items: center; }
     .article-about-me__container p,
     .article-designer__container p {
-      font-size: 15px;
-      color: #01161E; }
+      color: #01161E;
+      margin: 0; }
 
 .article-about-me__container h1 {
   font-size: 30px;
@@ -720,24 +724,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px; }
+  padding: 40px 0; }
   .section-reviews p {
-    font-size: 15px;
-    color: #5A7D7C; }
+    color: #5A7D7C;
+    text-align: center; }
   .section-reviews__p--emphasis {
-    font-weight: bold;
     border: 5px solid #5A7D7C;
     border-radius: 30px;
     margin: 15px;
     padding: 20px; }
   .section-reviews__p--name {
-    font-weight: bold;
-    margin: 0; }
+    margin: 0px 15px;
+    text-align: center; }
 
 .section-curriculum {
   background-color: #F25757;
   color: #F3F3F3;
-  padding-top: 40px; }
+  padding: 40px 0; }
+  .section-curriculum a {
+    display: block;
+    text-decoration: none;
+    color: #01161E;
+    background-color: #EFA00B;
+    padding: 10px 0;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    width: 300px;
+    margin: auto;
+    transition: .3s ease-in-out; }
+    .section-curriculum a:hover {
+      transform: translate(0, 10px); }
 
 .article-career,
 .article-personal-info {
@@ -752,13 +770,38 @@
     margin: 10px; }
   .article-career ul,
   .article-personal-info ul {
-    list-style: none; }
+    list-style: none;
+    margin: 0;
+    padding: 15px 30px; }
     .article-career ul li,
     .article-personal-info ul li {
       margin-bottom: 15px; }
   .article-career p,
   .article-personal-info p {
     margin: 0; }
+
+.div-spotify-playlist {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px 0; }
+  .div-spotify-playlist h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #F25757;
+    margin: 10px; }
+  .div-spotify-playlist iframe {
+    padding: 0 20px; }
+
+@media (min-width: 425px) {
+  .main-about p {
+    font-size: 20px; }
+  .article-about-me__img,
+  .article-designer__img {
+    width: 400px;
+    height: auto; } }
 
 /* MAIN (contact.html) */
 .main__h1--contact {
