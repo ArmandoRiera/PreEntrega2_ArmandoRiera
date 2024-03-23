@@ -701,6 +701,22 @@
   color: #5A7D7C;
   margin: 10px; }
 
+.article-about-me__container a {
+  display: block;
+  text-decoration: none;
+  color: #F3F3F3;
+  background-color: #5A7D7C;
+  padding: 10px 0;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  width: 300px;
+  margin: auto;
+  transition: .3s ease-in-out; }
+  .article-about-me__container a:hover {
+    transform: translate(0, 10px); }
+
 .article-about-me p {
   padding: 15px; }
 
@@ -731,6 +747,7 @@
   .section-reviews__p--emphasis {
     border: 5px solid #5A7D7C;
     border-radius: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 15px;
     padding: 20px; }
   .section-reviews__p--name {
@@ -741,6 +758,23 @@
   background-color: #F25757;
   color: #F3F3F3;
   padding: 40px 0; }
+  .section-curriculum article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-curriculum article div h2 {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px; }
+    .section-curriculum article div ul {
+      list-style: none;
+      margin: 0;
+      padding: 15px 30px; }
+      .section-curriculum article div ul li {
+        margin-bottom: 15px; }
+    .section-curriculum article div p {
+      margin: 0; }
   .section-curriculum a {
     display: block;
     text-decoration: none;
@@ -756,29 +790,6 @@
     transition: .3s ease-in-out; }
     .section-curriculum a:hover {
       transform: translate(0, 10px); }
-
-.article-career,
-.article-personal-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .article-career h2,
-  .article-personal-info h2 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    margin: 10px; }
-  .article-career ul,
-  .article-personal-info ul {
-    list-style: none;
-    margin: 0;
-    padding: 15px 30px; }
-    .article-career ul li,
-    .article-personal-info ul li {
-      margin-bottom: 15px; }
-  .article-career p,
-  .article-personal-info p {
-    margin: 0; }
 
 .div-spotify-playlist {
   display: flex;
@@ -802,6 +813,51 @@
   .article-designer__img {
     width: 400px;
     height: auto; } }
+
+@media (min-width: 768px) {
+  .article-about-me,
+  .article-designer {
+    display: flex;
+    justify-content: center; }
+    .article-about-me__container,
+    .article-designer__container {
+      width: 338px; }
+  .article-about-me {
+    flex-direction: row-reverse; }
+  .article-designer {
+    flex-direction: row; }
+  .section-curriculum article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center; } }
+
+@media (min-width: 1024px) {
+  .main-about p {
+    font-size: 25px; }
+  .main-about a {
+    font-size: 25px;
+    width: 250px; }
+  .main-about h1 {
+    font-size: 40px; }
+  .main-about h2 {
+    font-size: 40px; }
+  .main-about .section-curriculum article div h2 {
+    font-size: 40px; }
+  .main-about .article-about-me__container,
+  .main-about .article-designer__container {
+    width: 594px; } }
+
+@media (min-width: 1280px) {
+  .article-about-me__img,
+  .article-designer__img {
+    max-height: 100%;
+    width: auto;
+    margin-bottom: 50px; }
+  .section-reviews__p--emphasis {
+    width: 1280px; }
+  .section-curriculum article div {
+    width: 640px; } }
 
 /* MAIN (contact.html) */
 .main__h1--contact {

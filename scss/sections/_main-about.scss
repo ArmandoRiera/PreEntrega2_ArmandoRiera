@@ -42,6 +42,10 @@
             color: $green;
             margin: 10px;
         }
+
+        a {
+            @include call-to-action ($green, $white)
+        }
     }
 
     p {
@@ -89,6 +93,7 @@
         &--emphasis {
             border: 5px solid $green;
             border-radius: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             margin: 15px;
             padding: 20px;
         }
@@ -108,36 +113,38 @@
     color: $white;
     padding: 40px 0;
 
-    a {
-        @include call-to-action ($yellow, $black)
-    }
-}
+    article {
+        div {
 
-.article-career,
-.article-personal-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-    h2 {
-        font-size: $large;
-        font-weight: bold;
-        text-align: center;
-        margin: 10px;
-    }
+            h2 {
+                font-size: $large;
+                font-weight: bold;
+                text-align: center;
+                margin: 10px;
+            }
 
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 15px 30px;
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 15px 30px;
 
-        li {
-            margin-bottom: 15px;
+                li {
+                    margin-bottom: 15px;
+                }
+            }
+
+            p {
+                margin: 0;
+            }
         }
     }
 
-    p {
-        margin: 0;
+    a {
+        @include call-to-action ($yellow, $black)
     }
 }
 
@@ -178,5 +185,100 @@
             height: auto;
         }
     }
+}
 
+@media (min-width:768px) {
+
+    .article-about-me,
+    .article-designer {
+        display: flex;
+        justify-content: center;
+
+        &__container {
+            width: 768px-(400px+15px*2);
+        }
+    }
+
+    .article-about-me {
+        flex-direction: row-reverse;
+    }
+
+    .article-designer {
+        flex-direction: row;
+    }
+
+    .section-curriculum {
+        article {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    .main-about {
+        p {
+            font-size: $medium;
+        }
+
+        a {
+            font-size: $medium;
+            width: 250px;
+        }
+
+        h1 {
+            font-size: $xlarge;
+        }
+
+        h2 {
+            font-size: $xlarge;
+        }
+
+        .section-curriculum {
+            article {
+                div {
+                    h2 {
+                        font-size: $xlarge;
+                    }
+                }
+            }
+        }
+
+        .article-about-me,
+        .article-designer {
+            &__container {
+                width: 1024px-(400px+15px*2);
+            }
+        }
+    }
+}
+
+@media (min-width:1280px) {
+
+    .article-about-me,
+    .article-designer {
+        &__img {
+            max-height: 100%;
+            width: auto;
+            margin-bottom: 50px;
+        }
+    }
+
+    .section-reviews {
+        &__p {
+            &--emphasis {
+                width: 1280px;
+            }
+        }
+    }
+
+    .section-curriculum {
+        article {
+            div {
+                width: (1280px)/2;
+            }
+        }
+    }
 }
