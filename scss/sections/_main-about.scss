@@ -246,6 +246,14 @@
             }
         }
 
+        .div-spotify-playlist {
+
+            h2 {
+                font-size: $xlarge;
+            }
+
+        }
+
         .article-about-me,
         .article-designer {
             &__container {
@@ -280,5 +288,12 @@
                 width: (1280px)/2;
             }
         }
+    }
+
+    .div-spotify-playlist {
+        iframe {
+            width: 1280px;
+        }
+
     }
 }

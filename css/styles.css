@@ -844,6 +844,8 @@
     font-size: 40px; }
   .main-about .section-curriculum article div h2 {
     font-size: 40px; }
+  .main-about .div-spotify-playlist h2 {
+    font-size: 40px; }
   .main-about .article-about-me__container,
   .main-about .article-designer__container {
     width: 594px; } }
@@ -857,7 +859,9 @@
   .section-reviews__p--emphasis {
     width: 1280px; }
   .section-curriculum article div {
-    width: 640px; } }
+    width: 640px; }
+  .div-spotify-playlist iframe {
+    width: 1280px; } }
 
 /* MAIN (contact.html) */
 .main__h1--contact {
