@@ -747,7 +747,6 @@
   .section-reviews__p--emphasis {
     border: 5px solid #5A7D7C;
     border-radius: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 15px;
     padding: 20px; }
   .section-reviews__p--name {
