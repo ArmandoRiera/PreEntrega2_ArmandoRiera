@@ -667,6 +667,99 @@
   .section-choose-me__p--separated {
     width: 1280px; } }
 
+/* MAIN (about.html) */
+.article-about-me,
+.article-designer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  .article-about-me__img,
+  .article-designer__img {
+    width: 300px;
+    height: auto;
+    margin: 15px; }
+  .article-about-me__container,
+  .article-designer__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; }
+    .article-about-me__container p,
+    .article-designer__container p {
+      font-size: 15px;
+      color: #01161E; }
+
+.article-about-me__container h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #5A7D7C;
+  margin: 10px; }
+
+.article-about-me p {
+  padding: 15px; }
+
+.article-designer {
+  background-color: #EFA00B; }
+  .article-designer__container h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #F3F3F3;
+    margin: 10px; }
+  .article-designer__container ul {
+    list-style: decimal;
+    margin: 0;
+    padding: 15px 30px; }
+  .article-designer__p--separated {
+    padding: 15px;
+    margin: 0; }
+
+.section-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px; }
+  .section-reviews p {
+    font-size: 15px;
+    color: #5A7D7C; }
+  .section-reviews__p--emphasis {
+    font-weight: bold;
+    border: 5px solid #5A7D7C;
+    border-radius: 30px;
+    margin: 15px;
+    padding: 20px; }
+  .section-reviews__p--name {
+    font-weight: bold;
+    margin: 0; }
+
+.section-curriculum {
+  background-color: #F25757;
+  color: #F3F3F3;
+  padding-top: 40px; }
+
+.article-career,
+.article-personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .article-career h2,
+  .article-personal-info h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px; }
+  .article-career ul,
+  .article-personal-info ul {
+    list-style: none; }
+    .article-career ul li,
+    .article-personal-info ul li {
+      margin-bottom: 15px; }
+  .article-career p,
+  .article-personal-info p {
+    margin: 0; }
+
 /* MAIN (contact.html) */
 .main__h1--contact {
   color: #EFA00B;
